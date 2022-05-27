@@ -1,5 +1,5 @@
-import { Heroes } from "../data/Heroes";
+import { heroes } from "../data/Heroes";
 
-export const getHeroById = (id) => {
-    return Heroes = Heroes.filter ( hero => hero.id === id) ;
+export const getHeroById = (id='') => {
+    return  heroes.find ( hero => hero.id === id) ;
 }

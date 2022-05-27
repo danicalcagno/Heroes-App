@@ -27,7 +27,7 @@ const HeroCard = (
                             && <p className='text-muted'>{characters}</p>
                         }
                         <p className='card-text'><small className='text-muted'>{first_appearance}</small></p>
-                        <link to={`/hero/${id}`}></link>
+                        <Link to={`/hero/${id}`}>Mas..</Link>                        
                     </div>
                 </div>
             </div>

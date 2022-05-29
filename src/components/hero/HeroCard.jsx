@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HeroCard = (
+export const HeroCard = (
     {id, 
     superhero, 
     publisher, 

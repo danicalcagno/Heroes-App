@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../auth/authContext';
 import { useNavigate } from 'react-router-dom'
+import { types } from '../../types/types';
 
 export const LoginScreen = () => {
 
   const navigate = useNavigate();
+  const {dispatch} = useContext(AuthContext);
 
   const handleLogin = () => {
     //con replace en T le impido volver al login una vez que hace el handleLogin 
     //se reemplaza la ruta anterior por Marvel y no se puede volver usando el retroceder del navegador
-      navigate('/Marvel', 
-              {replace: true}); 
-  }
+    
+    const action = {
+        type: types.login, //accion a disparar
+        payload: {name: 'Daniela'} 
+      }
+    dispatch(action);
+
+    navigate('/Marvel', 
+            {replace: true}
+    ); 
+  
+}
 
   return (
     <div className='container mt-5'>

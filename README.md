@@ -13,4 +13,5 @@ useMemo(); //cambia cuando su dependencia lo hace, caso contrario memoriza para 
 useLocation();
 Query parameters
 queryString: //A query string is a part of a (URL) that assigns values to specified parameters.
+# rutas privadas y publicas
 Proteccion de rutas

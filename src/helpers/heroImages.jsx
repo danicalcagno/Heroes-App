@@ -1,0 +1,1 @@
+export const heroImages = require.context('../img/', true); //true es para que busque en subdirectorios
